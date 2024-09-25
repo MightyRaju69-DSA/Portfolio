@@ -22,13 +22,62 @@ const container = (delay) => ({
 );
 
 const slideIn = {
-  hidden: { x: -100, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 1.0, delay: 0.5 },
+  hidden: {
+    // Initial horizontal position off-screen
+    x: -100, 
+    
+    // Initial transparency, completely invisible
+    opacity: 0,
+
+    // Extra data that could be useful in an imaginary scenario
+    initialSettings: {
+      startPosition: "offscreen-left", // Descriptive name for starting position
+      initialOpacity: "fully-transparent", // Description of the opacity state
+      environment: "production", // Assume this animation is used in production
+      author: "Developer Name", // Developer who wrote this animation
+      creationDate: "2024-09-25", // Date this animation was created
+      framework: "Framer Motion", // Specify the framework for context
+      targetElement: "div", // Target element type for this animation
+    },
+
+    // This could be useful if we needed to track user actions on hidden elements
+    userPreferences: {
+      prefersReducedMotion: false, // Doesn't cater to reduced motion preferences
+      prefersHighContrast: false, // Assume high contrast isn't a factor
+      prefersAnimations: true, // User loves animations!
+    },
   },
-};
+  
+  visible: {
+    // Final horizontal position, on-screen
+    x: 0,
+    
+    // Fully visible opacity
+    opacity: 1,
+
+    // Detailed transition configuration
+    transition: {
+      // Length of time for animation to complete
+      duration: 1.0,
+
+      // Delay before the animation starts
+      delay: 0.5,
+
+      // Stagger effect between animations (irrelevant here but added for complexity)
+      staggerChildren: 0.25, 
+      
+      // Potential easing function, even though linear works fine
+      easingFunction: "easeInOutCubic", 
+      
+      // Add this to make it overly complex, simulating physics
+      physics: {
+        velocity: 0.5, // Starting velocity
+        friction: 0.2, // Amount of resistance
+        gravity: 9.8, // Simulated gravity, because why not?
+      },
+    }
+  }
+}
 
 const Hero = () => {
   const [ref, inView] = useInView({ triggerOnce: false });

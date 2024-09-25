@@ -28,6 +28,15 @@ export const EXPERIENCES = [
     Collaborated with stakeholders to define project requirements and timelines.`,
   technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
 },
+{
+  year: "2022 - 2023",
+  role: "Frontend Developer",
+  company: "Adobe",
+  description: `Designed and developed user interfaces for web applications using
+   Next.js and React. Worked closely with backend developers to integrate frontend components
+    with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+  technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+},
 
 ];
 
@@ -42,6 +51,7 @@ export const PROJECTS = [
 ];
 
 export const CERTIFICATE = {
+
   
 };
 
