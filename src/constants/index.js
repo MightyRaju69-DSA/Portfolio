@@ -42,6 +42,13 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Custom Login Page with Authentication",
+    image: "loginPage",
+    description:"Showcased my front-end and back-end development skills by building a secure login page with user authentication and session management. Implemented form validation and password encryption to enhance security. The login system integrates with a database to securely store user credentials and uses JWT (JSON Web Tokens) for session handling. This project focused on creating a responsive and user-friendly interface, ensuring smooth navigation and proper error handling.",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "JWT", "MongoDB"],
+    link: ""
+  },
+  {
     title: "Flipkart Clone Website",
     image: "flipkartClone",
     description: "Developed a full-stack e-commerce website mimicking the core features of Flipkart. Implemented a product catalog, user authentication, and a shopping cart system. The project includes a dynamic front-end for product browsing, and a back-end to manage user data, orders, and payments. Integrated a product recommendation system based on user preferences. The website is built with scalability in mind, ensuring efficient database queries and seamless user experience.",

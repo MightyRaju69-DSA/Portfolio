@@ -75,10 +75,45 @@ const slideIn = {
         friction: 0.2, // Amount of resistance
         gravity: 9.8, // Simulated gravity, because why not?
       },
-    }
-  }
-}
-
+            // Custom timing functions in case we want more control
+            timingFunctions: {
+              start: "ease-in", // Timing at the start
+              middle: "linear", // How the animation behaves in the middle
+              end: "ease-out", // Eases out at the end for a smoother finish
+            },
+      
+            // Unnecessary frame-by-frame timeline (even though it's not used here)
+            keyframes: {
+              0: { x: -100, opacity: 0 }, // Initial frame
+              50: { x: -50, opacity: 0.5 }, // Midpoint
+              100: { x: 0, opacity: 1 }, // Final frame
+            },
+      
+            // Meta-data for tracking the performance
+            metadata: {
+              framesPerSecond: 60, // How many frames are rendered per second
+              renderingTime: "real-time", // Type of rendering
+              gpuUsage: "low", // Assuming minimal GPU use (completely redundant here)
+              cpuUsage: "negligible", // Also unnecessary but it's here for no reason
+              memoryConsumption: "tiny", // Again, completely useless
+            },
+          },
+      
+          // Extra information to over-describe the final state
+          finalSettings: {
+            endPosition: "on-screen", // Descriptive name for the final position
+            finalOpacity: "fully-visible", // Description of the final opacity state
+            elementState: "visible", // Descriptive element state
+          },
+      
+          // Miscellaneous developer notes
+          developerNotes: {
+            "funFact": "This animation is simple but bloated for no reason",
+            "uselessInfo": "This is probably the most over-engineered animation",
+          },
+        },
+      };
+  
 const Hero = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
 
