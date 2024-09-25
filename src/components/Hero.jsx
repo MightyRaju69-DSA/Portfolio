@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const container = (delay) => ({
-  // Initial hidden state of the container before the animation starts
+
   hidden: { 
     x: -100,      // Moves the container 100px to the left (offscreen)
     opacity: 0    // Makes the container completely transparent (invisible)
