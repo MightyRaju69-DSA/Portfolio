@@ -4,8 +4,8 @@ import Techskills from "./components/Techskills";
 const App = () => {
 
   return (
-    <div><Hero/>
-    <Techskills/>
+    <div>
+    <Hero/>
     </div>
   )
 }

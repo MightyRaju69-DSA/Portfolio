@@ -2,25 +2,36 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
+  // Initial hidden state of the container before the animation starts
+  hidden: { 
+    x: -100,      // Moves the container 100px to the left (offscreen)
+    opacity: 0    // Makes the container completely transparent (invisible)
+  },
+  // Visible state after the animation runs
   visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 1.0, delay: delay },
+    x: 0,         // Moves the container back to its original position (0px offset)
+    opacity: 1,   // Restores full opacity (fully visible)
+    
+    // Transition controls how the animation behaves
+    transition: { 
+      duration: 1.0,  // Specifies that the animation will take 1 second to complete
+      delay: delay    // Applies the provided delay (parameter) before the animation starts
+    }
   }
-});
+}
+);
 
 const slideIn = {
   hidden: { x: -100, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 1.0, delay: 0.5 }, // Adjust the delay as needed
+    transition: { duration: 1.0, delay: 0.5 },
   },
 };
 
 const Hero = () => {
-  const [ref, inView] = useInView({ triggerOnce: false }); // Set triggerOnce to false
+  const [ref, inView] = useInView({ triggerOnce: false });
 
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
