@@ -41,6 +41,10 @@ export const PROJECTS = [
   }
 ];
 
+export const CERTIFICATE = {
+  
+};
+
 export const CONTACT = {
   
 };
