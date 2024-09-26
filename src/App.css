@@ -4,30 +4,34 @@
     margin: 0 auto; /* Centers the content horizontally */
     padding: 2rem; /* Adds padding around the content */
     text-align: center; /* Centers the text inside the container */
+    background-color: #f5f5f5; /* Light background color for better contrast */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
 .logo {
     /* Logo styling */
     height: 6em; /* Set logo height */
     padding: 1.5em; /* Padding around the logo */
-    will-change: filter; /* Optimizes performance for filter effects */
-    transition: filter 300ms; /* Smooth transition for filter changes on hover */
+    transition: transform 300ms, filter 300ms; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes cursor to pointer to indicate clickability */
 }
 
 .logo:hover {
-    /* Filter effect when the logo is hovered */
+    /* Hover effect for logos */
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
     filter: drop-shadow(0 0 2em #646cffaa); /* Drop shadow with a blue-ish glow */
 }
 
 .logo.react:hover {
-    /* Specific hover effect for logos with the 'react' class */
+    /* Specific hover effect for React logos */
     filter: drop-shadow(0 0 2em #61dafbaa); /* Drop shadow with React's light blue color */
 }
 
 @keyframes logo-spin {
-    /* Keyframes to animate the logo spinning */
+    /* Keyframes for logo spin animation */
     from {
-        transform: rotate(0deg); /* Initial rotation */
+        transform: rotate(0deg); /* Initial position */
     }
     to {
         transform: rotate(360deg); /* Full rotation */
@@ -35,18 +39,67 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    /* Animation applied only if the user has no preference for reduced motion */
+    /* Animation applied for users who do not prefer reduced motion */
     a:nth-of-type(2) .logo {
         animation: logo-spin infinite 20s linear; /* Infinite spin over 20 seconds */
     }
 }
 
 .card {
-    /* Styling for card elements */
-    padding: 2em; /* Padding inside the card */
+    /* Card element styling */
+    padding: 2em; /* Adds padding inside the card */
+    background-color: white; /* White background for the card */
+    border-radius: 10px; /* Rounds the corners of the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 1.5rem 0; /* Adds space between cards */
+    transition: transform 300ms ease-in-out; /* Smooth transition when interacting */
+}
+
+.card:hover {
+    /* Hover effect for cards */
+    transform: translateY(-10px); /* Moves the card up slightly on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
 }
 
 .read-the-docs {
-    /* Text styling for elements with the 'read-the-docs' class */
+    /* Styling for read-the-docs text */
     color: #888; /* Light grey text color */
+    font-size: 0.9em; /* Slightly smaller font size */
+    text-decoration: underline; /* Underlines the text */
+}
+
+button {
+    /* Button styling */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    background-color: #646cff; /* Primary button color */
+    color: white; /* Button text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Shows pointer on hover */
+    transition: background-color 300ms ease-in-out; /* Smooth color transition */
+}
+
+button:hover {
+    /* Hover effect for button */
+    background-color: #535bf2; /* Darkens the button on hover */
+}
+
+button:active {
+    /* Active state styling */
+    transform: scale(0.98); /* Slightly shrinks the button on click */
+}
+
+/* Additional media queries for responsiveness */
+@media (max-width: 768px) {
+    #root {
+        padding: 1rem; /* Reduces padding on smaller screens */
+    }
+
+    .logo {
+        height: 4em; /* Smaller logo size for mobile */
+    }
+
+    .card {
+        padding: 1.5em; /* Smaller padding on mobile */
+    }
 }

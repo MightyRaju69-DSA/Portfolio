@@ -46,6 +46,13 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "JWT", "MongoDB"],
     link: ""
   },
+  {
+    title: "LinkedIn Learning: Building RESTful APIs with Flask",
+    image: "linkedinflask",
+    description:"The LinkedIn Learning course on Building RESTful APIs with Flask was instrumental in improving my back-end development capabilities. I learned how to design and implement RESTful APIs, handle HTTP requests, and manage databases. This course allowed me to create robust, efficient web services using Flask, a Python-based microframework. It broadened my understanding of back-end development and enhanced my ability to connect front-end applications to server-side services.",
+    technologies: ["Flask", "Python", "APIs", "SQLAlchemy", "PostgreSQL"],
+    link: ""
+},
 ];
 
 export const CERTIFICATE = [
@@ -55,13 +62,6 @@ export const CERTIFICATE = [
     description: "The Udemy Full Stack Web Developer Bootcamp was a comprehensive course that taught me to build full-stack web applications from scratch. It covered front-end technologies like HTML, CSS, and JavaScript, as well as back-end technologies like Node.js, Express, and MongoDB. Through hands-on projects and real-world examples, this course equipped me with the skills needed to develop fully functional web apps, from user interfaces to database management.",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
     link: "", 
-},
-{
-  title: "Coursera Web Application Development with React",
-  image: "courserareact",
-  description:"This Coursera course introduced me to modern front-end development using React. By working through practical projects, I learned how to design dynamic user interfaces and integrate them with RESTful APIs. The course not only honed my skills in JavaScript and React but also taught me how to handle state management effectively using Redux. Completing this course gave me the confidence to build responsive, scalable web applications.",
-  technologies: ["React", "JavaScript", "Redux", "REST APIs"],
-  link: ""
 },
 {
   title: "FreeCodeCamp Front-End Developer Certification",

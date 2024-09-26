@@ -1,16 +1,46 @@
-import logo from "../assets/kevinRushLogo.png";
-import { FaLinkedin, FaGithub, FaTelegram, FaInstagram, FaTwitter } from "react-icons/fa";
+import logo from "../assets/kevinRushLogo.png"; // Import the logo image
+import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"; // Import the social media icons from react-icons
 
 const Navbar = () => {
   return (
     <nav className="mb-8 lg:mb-20 flex flex-col lg:flex-row items-center justify-between py-6">
+      {/* Logo Section */}
       <div className="flex items-center justify-center lg:justify-start">
+        {/* The website's logo is displayed here */}
         <img className="h-16" src={logo} alt="logo" />
       </div>
+
+      {/* Social Media Links Section */}
       <div className="flex items-center justify-center lg:justify-end mt-4 lg:mt-0">
-        <a href="https://x.com/Raju29022004?s=0" target="_blank" rel="noopener noreferrer" className="text-2xl mr-4 lg:mr-8"><FaTwitter /></a>
-        <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl mr-4 lg:mr-8"><FaInstagram /></a>
-        <a href="https://github.com/MightyRaju69-DSA" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaGithub /></a> 
+        {/* Twitter link with the Twitter icon */}
+        <a 
+          href="https://x.com/Raju29022004?s=0" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-2xl mr-4 lg:mr-8"
+        >
+          <FaTwitter />
+        </a>
+
+        {/* Instagram link with the Instagram icon */}
+        <a 
+          href="" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-2xl mr-4 lg:mr-8"
+        >
+          <FaInstagram />
+        </a>
+
+        {/* GitHub link with the GitHub icon */}
+        <a 
+          href="https://github.com/MightyRaju69-DSA" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-2xl"
+        >
+          <FaGithub />
+        </a>
       </div>
     </nav>
   );
