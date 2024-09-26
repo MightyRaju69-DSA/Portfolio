@@ -66,13 +66,7 @@ export const PROJECTS = [
 ];
 
 export const CERTIFICATE = {
-  {
-  title: "Google's Web Development Certification",
-  image: "googlecert",
-  description: "Completing the Google Web Development Certification marked a pivotal moment in my journey as a developer. This course provided a solid foundation in front-end and back-end web development. It introduced me to the core principles of building responsive, user-friendly websites while enhancing my skills in creating dynamic web applications. The certification has strengthened my ability to design, develop, and deploy robust web solutions, aligning perfectly with my passion for crafting seamless digital experiences.",
-  technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
-  link: ""
-},
+
 };
 
 
