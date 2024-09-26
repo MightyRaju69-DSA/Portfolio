@@ -4,17 +4,55 @@ import Slider from "react-slick";  // Importing the slider component from the 'r
 import "slick-carousel/slick/slick.css";  // Importing the base CSS for the carousel
 import "slick-carousel/slick/slick-theme.css";  // Importing the theme for the carousel
 
-const Projects = () => {
-  // Slider settings to configure how the carousel behaves
-  const settings = {
-    dots: true,  // Show navigation dots below the slider
-    infinite: true,  // Enable infinite scrolling
-    speed: 500,  // Transition speed between slides
-    slidesToShow: 1,  // Number of slides to show at once
-    slidesToScroll: 1,  // Number of slides to scroll at a time
-    adaptiveHeight: true,  // Adjust slider height based on content
-  };
-
+const settings = {
+  dots: true,  // Show navigation dots below the slider
+  infinite: true,  // Enable infinite scrolling
+  speed: 500,  // Transition speed between slides
+  slidesToShow: 1,  // Number of slides to show at once
+  slidesToScroll: 1,  // Number of slides to scroll at a time
+  adaptiveHeight: true,  // Adjust slider height based on content
+  arrows: true,  // Show navigation arrows (prev/next)
+  autoplay: false,  // Enable autoplay
+  autoplaySpeed: 3000,  // Time between each slide change in autoplay mode
+  pauseOnHover: true,  // Pause autoplay on hover
+  centerMode: false,  // Center the active slide
+  centerPadding: '0px',  // Padding around the centered slide
+  lazyLoad: 'ondemand',  // Load images only when needed
+  fade: false,  // Enable fade transition effect
+  vertical: false,  // Display the slider vertically
+  verticalSwiping: false,  // Enable vertical swiping
+  rtl: false,  // Right-to-left mode
+  swipeToSlide: true,  // Allow users to drag/swipe to change slides
+  touchMove: true,  // Enable touch move
+  touchThreshold: 5,  // Threshold for detecting touch events
+  useCSS: true,  // Use CSS for slide positioning
+  variableWidth: false,  // Enable variable slide widths
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
   return (
     <div className="border-b border-neutral-900 pb-4 mx-4 lg:mx-20">
       {/* Title animation for the section */}
@@ -57,6 +95,5 @@ const Projects = () => {
       </div>
     </div>
   );
-};
 
 export default Projects;

@@ -1,4 +1,4 @@
-import { DiLinux } from 'react-icons/di'
+import { DiLinux } from 'react-icons/di';
 import { DiTerminal } from 'react-icons/di'; 
 import { FaNetworkWired } from 'react-icons/fa';
 import { FaGitAlt } from 'react-icons/fa';
@@ -6,6 +6,10 @@ import { SiDocker } from 'react-icons/si';
 import { SiKubernetes } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa'; // Importing React icon
+import { SiPython } from 'react-icons/si'; // Importing Python icon
+import { SiPostgresql } from 'react-icons/si'; // Importing PostgreSQL icon
+import { SiMongodb } from 'react-icons/si'; // Importing MongoDB icon
 import { animate, motion } from 'framer-motion'; // Importing framer-motion for animations
 
 // Function to define animation variants for icons, receiving 'duration' as a parameter
@@ -68,6 +72,66 @@ function DockerIcon() {
     <div>
       <SiDocker size={64} className='mx-2' />
       <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>Docker</p>
+    </div>
+  );
+}
+
+// Icon component for Node.js
+function NodeIcon() {
+  return (
+    <div>
+      <FaNodeJs size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>Node.js</p>
+    </div>
+  );
+}
+
+// Icon component for JavaScript
+function JavaScriptIcon() {
+  return (
+    <div>
+      <SiJavascript size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>JavaScript</p>
+    </div>
+  );
+}
+
+// Icon component for React
+function ReactIcon() {
+  return (
+    <div>
+      <FaReact size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>React</p>
+    </div>
+  );
+}
+
+// Icon component for Python
+function PythonIcon() {
+  return (
+    <div>
+      <SiPython size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>Python</p>
+    </div>
+  );
+}
+
+// Icon component for PostgreSQL
+function PostgreSQLIcon() {
+  return (
+    <div>
+      <SiPostgresql size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>PostgreSQL</p>
+    </div>
+  );
+}
+
+// Icon component for MongoDB
+function MongoDBIcon() {
+  return (
+    <div>
+      <SiMongodb size={64} className='mx-2' />
+      <p className='flex flex-wrap my-2 mb-0 items-center justify-center'>MongoDB</p>
     </div>
   );
 }
@@ -144,6 +208,67 @@ const Techskills = () => {
         >
           <DockerIcon />
         </motion.div>
+
+        {/* Animated Node.js Icon */}
+        <motion.div 
+          variants={iconVariants(3)} 
+          initial="initial" 
+          animate="animate" 
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+        >
+          <NodeIcon />
+        </motion.div>
+
+        {/* Animated JavaScript Icon */}
+        <motion.div 
+          variants={iconVariants(3)} 
+          initial="initial" 
+          animate="animate" 
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+        >
+          <JavaScriptIcon />
+        </motion.div>
+
+        {/* Animated React Icon */}
+        <motion.div 
+          variants={iconVariants(3)} 
+          initial="initial" 
+          animate="animate" 
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+        >
+          <ReactIcon />
+        </motion.div>
+
+        {/* Animated Python Icon */}
+        <motion.div 
+          variants={iconVariants(3)} 
+          initial="initial" 
+          animate="animate" 
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+        >
+          <PythonIcon />
+        </motion.div>
+
+        {/* Animated PostgreSQL Icon */}
+        <motion.div 
+          variants={iconVariants(3)} 
+          initial="initial" 
+          animate="animate" 
+          className='rounded-2xl border-4 border-neutral-800 p-4'
+        >
+          <PostgreSQLIcon />
+        </motion.div>
+
+         {/* Animated MongoDB Icon */}
+         <motion.div 
+           variants={iconVariants(3)}  
+           initial="initial"  
+           animate="animate"  
+           className='rounded-2xl border-4 border-neutral-800 p=4'
+         >
+           <MongoDBIcon />  
+         </motion.div> 
+
       </motion.div>
     </div>
   );

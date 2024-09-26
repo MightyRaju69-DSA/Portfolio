@@ -12,7 +12,8 @@ import { Link } from 'react-router-dom';
 
 export const HERO_CONTENT = `I’m a full stack developer with 5 years of experience creating scalable and efficient web apps. My skills include front-end frameworks like Angular and Vue.js, as well as back-end tools such as Python, Flask, Firebase, and Redis. I thrive on crafting innovative solutions that optimize user experience and contribute to business success, always focused on building robust and dependable applications.`;
 
-export const ABOUT_TEXT = `I'm Raju Mighty, an engineering student with a deep passion for full stack development, specializing in building dynamic, user-focused applications. With expertise in databases, server-side logic, and UI/UX design, I’m well-equipped to craft responsive, efficient web applications from concept to deployment. Actively engaged in continuous learning and development, I’m driven to excel as a full stack developer. Leveraging my knowledge in system architecture and coding, I’m committed to building innovative solutions that deliver exceptional user experiences.`;
+export const ABOUT_TEXT = ` I am Raju Mighty, an engineering student with a strong passion for full stack development, specializing in the creation of dynamic, user-centered applications. I possess expertise in databases, server-side logic, and UI/UX design, enabling me to develop responsive and efficient web applications from concept to deployment.
+I am committed to continuous learning and professional growth, striving to excel as a full stack developer. With a solid foundation in system architecture and programming, I am dedicated to building innovative solutions that provide exceptional user experiences.`;
 
 export const EXPERIENCES = [
   {
