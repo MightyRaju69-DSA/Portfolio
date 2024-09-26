@@ -1,69 +1,84 @@
 :root {
+    /* Default font settings for the whole document */
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+    line-height: 1.5; /* Space between lines of text */
+    font-weight: 400; /* Normal font weight */
   
+    /* Color settings for both light and dark modes */
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87); /* Slightly transparent white text */
+    background-color: #242424; /* Dark background color */
   
+    /* Optimizations for font rendering */
     font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: #535bf2;
-  }
-  
-  body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-  }
-  
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-  }
-  
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #646cff;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  @media (prefers-color-scheme: light) {
+    text-rendering: optimizeLegibility; /* Improves legibility */
+    -webkit-font-smoothing: antialiased; /* Improves font rendering in Webkit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Mac OS */
+}
+
+a {
+    /* Link styling */
+    font-weight: 500; /* Slightly bold font */
+    color: #646cff; /* Blue-ish color for links */
+    text-decoration: inherit; /* Inherits text decoration (e.g., underline) from parent */
+}
+
+a:hover {
+    /* Change link color on hover */
+    color: #535bf2; /* Darker shade of blue */
+}
+
+body {
+    /* Basic body styling */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use Flexbox layout */
+    place-items: center; /* Center items vertically and horizontally */
+    min-width: 320px; /* Ensure body has a minimum width of 320px */
+    min-height: 100vh; /* Ensure body height takes up full viewport */
+}
+
+h1 {
+    /* Styling for <h1> headings */
+    font-size: 3.2em; /* Large font size */
+    line-height: 1.1; /* Slightly reduced line height */
+}
+
+button {
+    /* Basic button styling */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid transparent; /* Invisible border, becomes visible on hover */
+    padding: 0.6em 1.2em; /* Padding inside the button */
+    font-size: 1em; /* Default font size */
+    font-weight: 500; /* Semi-bold font */
+    font-family: inherit; /* Inherit font from parent */
+    background-color: #1a1a1a; /* Dark background color for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: border-color 0.25s; /* Smooth transition for border color change */
+}
+
+button:hover {
+    /* Change border color on hover */
+    border-color: #646cff; /* Light blue border */
+}
+
+button:focus,
+button:focus-visible {
+    /* Styling for focused buttons (keyboard navigation) */
+    outline: 4px auto -webkit-focus-ring-color; /* Blue focus ring */
+}
+
+@media (prefers-color-scheme: light) {
+    /* Media query for light mode preferences */
     :root {
-      color: #213547;
-      background-color: #ffffff;
+      color: #213547; /* Darker text for light mode */
+      background-color: #ffffff; /* White background for light mode */
     }
     a:hover {
-      color: #747bff;
+      /* Change link color on hover in light mode */
+      color: #747bff; /* Lighter blue color */
     }
     button {
-      background-color: #f9f9f9;
+      /* Light mode button background */
+      background-color: #f9f9f9; /* Light grey background for buttons */
     }
-  }
-  
+}
