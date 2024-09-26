@@ -42,10 +42,20 @@ export const EXPERIENCES = [
     to deliver high-quality software products on schedule.`,
    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
 },
+{
+  year: "2020 - 2021",
+  role: "Software Engineer",
+  company: "Paypal",
+  description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js.
+   Managed databases and implemented data storage solutions using MongoDB.
+    Worked closely with product managers to prioritize features and enhancements.`,
+  technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+},
 ];
 export const CONTACT = {
   address: "Mumbai, India",
-  contact_me: "raju6942069withdsa",
+  Instagram: "https://www.instagram.com/dsawithraju/",
+  Twitter: "https://x.com/Raju29022004",
   email: "mightyraju6942069@gmail.com",
 };
 export const PROJECTS = [
@@ -65,9 +75,29 @@ export const PROJECTS = [
   },
 ];
 
-export const CERTIFICATE = {
-
-};
+export const CERTIFICATE = [
+  {
+    title: "Udemy Full Stack Web Developer Bootcamp",
+    image: "udemybootcamp",
+    description: "The Udemy Full Stack Web Developer Bootcamp was a comprehensive course that taught me to build full-stack web applications from scratch. It covered front-end technologies like HTML, CSS, and JavaScript, as well as back-end technologies like Node.js, Express, and MongoDB. Through hands-on projects and real-world examples, this course equipped me with the skills needed to develop fully functional web apps, from user interfaces to database management.",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    link: "", 
+},
+{
+  title: "Coursera Web Application Development with React",
+  image: "courserareact",
+  description:"This Coursera course introduced me to modern front-end development using React. By working through practical projects, I learned how to design dynamic user interfaces and integrate them with RESTful APIs. The course not only honed my skills in JavaScript and React but also taught me how to handle state management effectively using Redux. Completing this course gave me the confidence to build responsive, scalable web applications.",
+  technologies: ["React", "JavaScript", "Redux", "REST APIs"],
+  link: ""
+},
+{
+  title: "FreeCodeCamp Front-End Developer Certification",
+  image: "fccfrontend",
+  description:"The FreeCodeCamp Front-End Developer Certification allowed me to dive deep into the world of front-end web development. With a focus on HTML, CSS, and JavaScript, I built numerous projects that demonstrated the creation of user-centric designs. The course taught me how to develop responsive websites, implement animations, and ensure compatibility across different browsers. Completing this certification enhanced my understanding of clean, efficient code for user-friendly web interfaces.",
+  technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+  link: ""
+},
+];
 
 
 

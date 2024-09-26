@@ -4,6 +4,7 @@ import Techskills from "./components/Techskills";
 import Aboutme from "./components/Aboutme"
 import Mycertificate from "./components/Mycertificate";
 import Projects from "./components/Projects"
+import Contact from "./components/Contact";
 
 const App = () => {
 
