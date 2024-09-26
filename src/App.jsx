@@ -5,15 +5,18 @@ import Aboutme from "./components/Aboutme"
 import Mycertificate from "./components/Mycertificate";
 import Projects from "./components/Projects"
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar"
 
 const App = () => {
 
   return (
     <div>
-    <Hero/>
+    <Navbar/>
     <Techskills/>
-    <Aboutme/>
+    <Hero/>
     <Mycertificate/>
+    <Contact/>
+    <Aboutme/>
     </div>
   )
 }
