@@ -37,10 +37,27 @@ body {
     min-height: 100vh; /* Ensure body height takes up full viewport */
 }
 
+h1, h2, h3, h4, h5, h6 {
+    /* Styling for all heading levels */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 h1 {
     /* Styling for <h1> headings */
     font-size: 3.2em; /* Large font size */
     line-height: 1.1; /* Slightly reduced line height */
+}
+
+h2 {
+    /* Styling for <h2> headings */
+    font-size: 2.4em; /* Slightly smaller than h1 */
+    line-height: 1.2; /* Slightly reduced line height */
+}
+
+p {
+    /* Styling for paragraphs */
+    margin: 0 0 1em 0; /* Add bottom margin for spacing between paragraphs */
 }
 
 button {
@@ -67,6 +84,21 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color; /* Blue focus ring */
 }
 
+.container {
+    /* Styling for a container class */
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2rem; /* Add some padding inside the container */
+}
+
+.card {
+    /* Styling for a card component */
+    background-color: #333; /* Dark background color for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    padding: 1.5rem; /* Add padding inside the card */
+}
+
 @media (prefers-color-scheme: light) {
     /* Media query for light mode preferences */
     :root {
@@ -80,5 +112,10 @@ button:focus-visible {
     button {
       /* Light mode button background */
       background-color: #f9f9f9; /* Light grey background for buttons */
+    }
+    .card {
+        /* Light mode card styling */
+        background-color: #f0f0f0; /* Light grey background for cards */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter box shadow */
     }
 }
