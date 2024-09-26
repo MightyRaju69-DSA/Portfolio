@@ -10,11 +10,7 @@ import Homelab from "../assets/projects/Homelab.png"
 import { Link } from 'react-router-dom';  
 
 
-export const HERO_CONTENT = `I’m a full stack developer with 5 years of experience 
-creating scalable and efficient web apps. My skills include front-end frameworks like
-Angular and Vue.js, as well as back-end tools such as Python, Flask, Firebase, and Redis.
-I thrive on crafting innovative solutions that optimize user experience and contribute to
-business success, always focused on building robust and dependable applications.`;
+export const HERO_CONTENT = `I’m a full stack developer with 5 years of experience creating scalable and efficient web apps. My skills include front-end frameworks like Angular and Vue.js, as well as back-end tools such as Python, Flask, Firebase, and Redis. I thrive on crafting innovative solutions that optimize user experience and contribute to business success, always focused on building robust and dependable applications.`;
 
 export const ABOUT_TEXT = `I'm Raju Mighty, an engineering student with a deep passion for full stack development, specializing in building dynamic, user-focused applications. With expertise in databases, server-side logic, and UI/UX design, I’m well-equipped to craft responsive, efficient web applications from concept to deployment. Actively engaged in continuous learning and development, I’m driven to excel as a full stack developer. Leveraging my knowledge in system architecture and coding, I’m committed to building innovative solutions that deliver exceptional user experiences.`;
 
@@ -37,10 +33,29 @@ export const EXPERIENCES = [
     with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
   technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
 },
-
+{
+   year: "2021 - 2022",
+   role: "Full Stack Developer",
+   company: "Facebook",
+   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js.
+    Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams 
+    to deliver high-quality software products on schedule.`,
+   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+},
 ];
-
+export const CONTACT = {
+  address: "Mumbai, India",
+  contact_me: "raju6942069withdsa",
+  email: "mightyraju6942069@gmail.com",
+};
 export const PROJECTS = [
+  {
+    title: "Flipkart Clone Website",
+    image: "flipkartClone",
+    description: "Developed a full-stack e-commerce website mimicking the core features of Flipkart. Implemented a product catalog, user authentication, and a shopping cart system. The project includes a dynamic front-end for product browsing, and a back-end to manage user data, orders, and payments. Integrated a product recommendation system based on user preferences. The website is built with scalability in mind, ensuring efficient database queries and seamless user experience.",
+    technologies: ["React", "Express", "Node.js", "MongoDB", "Stripe API"],
+    link: ""
+  },
   {
     title: "Custom Login Page with Authentication",
     image: "loginPage",
@@ -48,21 +63,17 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "JWT", "MongoDB"],
     link: ""
   },
-  {
-    title: "Flipkart Clone Website",
-    image: "flipkartClone",
-    description: "Developed a full-stack e-commerce website mimicking the core features of Flipkart. Implemented a product catalog, user authentication, and a shopping cart system. The project includes a dynamic front-end for product browsing, and a back-end to manage user data, orders, and payments. Integrated a product recommendation system based on user preferences. The website is built with scalability in mind, ensuring efficient database queries and seamless user experience.",
-    technologies: ["React", "Express", "Node.js", "MongoDB", "Stripe API"],
-    link: ""
-  }
 ];
 
 export const CERTIFICATE = {
-
-  
+  {
+  title: "Google's Web Development Certification",
+  image: "googlecert",
+  description: "Completing the Google Web Development Certification marked a pivotal moment in my journey as a developer. This course provided a solid foundation in front-end and back-end web development. It introduced me to the core principles of building responsive, user-friendly websites while enhancing my skills in creating dynamic web applications. The certification has strengthened my ability to design, develop, and deploy robust web solutions, aligning perfectly with my passion for crafting seamless digital experiences.",
+  technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
+  link: ""
+},
 };
 
-export const CONTACT = {
-  
-};
+
 
