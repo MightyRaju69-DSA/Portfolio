@@ -10,7 +10,10 @@ import Homelab from "../assets/projects/Homelab.png"
 import { Link } from 'react-router-dom';  
 
 
-export const HERO_CONTENT = `I’m a full stack developer with 5 years of experience creating scalable and efficient web apps. My skills include front-end frameworks like Angular and Vue.js, as well as back-end tools such as Python, Flask, Firebase, and Redis. I thrive on crafting innovative solutions that optimize user experience and contribute to business success, always focused on building robust and dependable applications.`;
+export const HERO_CONTENT = `I am a full stack developer with 5 years of experience in designing and developing scalable, efficient, and user-centric web applications. My skill set encompasses a wide range of front-end frameworks, including Angular and Vue.js, as well as proficiency in back-end technologies such as Python, Flask, Firebase, and Redis.
+Throughout my career, I have consistently demonstrated the ability to craft innovative solutions that optimize user experience and contribute to business success. My focus remains steadfast on building robust, dependable, and high-performing applications that meet the evolving needs of clients and end-users alike.
+By leveraging my extensive knowledge of web development best practices and emerging technologies, I am well-equipped to lead cross-functional teams in delivering complex projects on time and within budget. I am committed to staying at the forefront of the industry, continuously learning and adapting to new tools and methodologies to ensure the highest level of quality and efficiency in my work.
+As a full stack developer, I take pride in my ability to seamlessly bridge the gap between front-end and back-end components, ensuring smooth integration and optimal performance across all layers of an application. My attention to detail and problem-solving skills enable me to tackle complex challenges and provide innovative solutions that drive business growth and user satisfaction.`;
 
 export const ABOUT_TEXT = ` I am Raju Mighty, an engineering student with a strong passion for full stack development, specializing in the creation of dynamic, user-centered applications. I possess expertise in databases, server-side logic, and UI/UX design, enabling me to develop responsive and efficient web applications from concept to deployment.
 I am committed to continuous learning and professional growth, striving to excel as a full stack developer. With a solid foundation in system architecture and programming, I am dedicated to building innovative solutions that provide exceptional user experiences.`;
@@ -69,6 +72,21 @@ export const CERTIFICATE = [
   image: "fccfrontend",
   description:"The FreeCodeCamp Front-End Developer Certification allowed me to dive deep into the world of front-end web development. With a focus on HTML, CSS, and JavaScript, I built numerous projects that demonstrated the creation of user-centric designs. The course taught me how to develop responsive websites, implement animations, and ensure compatibility across different browsers. Completing this certification enhanced my understanding of clean, efficient code for user-friendly web interfaces.",
   technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+  link: ""
+},
+{
+  "title": "Pluralsight Advanced Node.js and Express",
+  "image": "pluralsightnode",
+  "description":
+    "Pluralsight's Advanced Node.js and Express course helped me elevate my back-end development skills. I explored advanced topics in server-side JavaScript, including middleware, authentication, and database integration with MongoDB. This course gave me hands-on experience building APIs, managing sessions, and deploying scalable web applications, solidifying my expertise in server-side programming.",
+  "technologies": ["Node.js", "Express", "MongoDB", "APIs", "Authentication"],
+  "link": ""
+},
+{
+  title: "LinkedIn Learning: Building RESTful APIs with Flask",
+  image: "linkedinflask",
+  description:  "The LinkedIn Learning course on Building RESTful APIs with Flask was instrumental in improving my back-end development capabilities. I learned how to design and implement RESTful APIs, handle HTTP requests, and manage databases. This course allowed me to create robust, efficient web services using Flask, a Python-based microframework. It broadened my understanding of back-end development and enhanced my ability to connect front-end applications to server-side services.",
+  technologies: ["Flask", "Python", "APIs", "SQLAlchemy", "PostgreSQL"],
   link: ""
 },
 ];
